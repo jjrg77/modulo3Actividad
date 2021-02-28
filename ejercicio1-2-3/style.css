@@ -1,0 +1,96 @@
+/* *****EJERCICIO 1: PANTALLA PC**************** */
+* {
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.contenedor {
+    display: flex;
+    flex-flow: column nowrap;
+}
+/* --------HEADER Y TOP-------------------------- */
+    .header {
+        background: #000000;
+        display: flex;
+        flex-flow: column nowrap;
+    }
+        .menu {
+            background: #202f5d;
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+        }
+            .logo {
+                background: #FE2E2E;
+                flex: 1 1 auto;
+            }
+            .nav {
+                background: #FE2E2E;
+                flex: 5 1 auto;
+            }
+            .social {
+                background: #FE2E2E;
+                flex: 1 1 auto;
+            }
+        .texto-principal {
+            background: #FF8000;
+        }
+            h1 {
+                background: #FFFF00;
+            }
+/* --------SECTION-ASIDE------------------------- */
+    .section {
+        background: #000000;
+        display: flex;
+    }
+        .articulos {
+            background: #615c5c;
+            flex: 2 1 auto;
+            display: flex;
+            flex-flow: row wrap;
+        } 
+            .articulo {
+                background: #202f5d;
+                flex: 1 1 40%;
+            }
+            .navegacion {
+                background: #819FF7;
+                flex: 1 1 100%;
+            } 
+        .aside {
+            background: #d14545;
+            flex: 1 1 auto;
+        }
+            .publi {
+                background: #cace62;
+            }
+/* --------FOOTER-------------------------------- */
+    .footer {
+        background: #000000;
+    }
+        .pie {
+            background: #DF7401;
+        }
+/* *****EJERCICIO 2: PANTALLA TABLET************ */
+@media all and (max-width: 800px) {
+    .section {
+        flex-direction: column;
+        background: #FFFF00;
+    }
+}
+/* *****EJERCICIO 3: PANTALLA SMARTPHONE******** */
+/* he optado, de forma libre, a realizar cambios en esta pantalla (además de dejarla adaptada según la tarea). Las modificaciones libres se encuentran en la cabecera, en section y el footer */
+@media all and (max-width: 400px) {
+    .menu {
+        display:grid;
+        height: auto;
+        
+    }
+    .section {
+        flex-direction: column;   
+    }
+
+    .pie {
+        background: #FFF;
+}
+}
